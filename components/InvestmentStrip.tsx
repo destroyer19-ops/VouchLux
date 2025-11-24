@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Variants } from "framer-motion";
 
 const highlights = [
   "N1.2B Sales Projection",
@@ -13,16 +14,18 @@ const highlights = [
 // Duplicate the array to create a seamless loop
 const duplicatedHighlights = [...highlights, ...highlights];
 
-const marqueeVariants = {
+
+const marqueeVariants: Variants = {
   animate: {
-    x: [0, -1005], // Adjust this value based on the width of your content
+    x: [0, -1035],
     transition: {
       x: {
         repeat: Infinity,
-        repeatType: "loop",
-        duration: 20, // Adjust duration for speed
-        ease: "linear",
+        repeatType: "loop" as const,   // ← "as const" fixes the type error
+        duration: 40,
+        ease: "linear" as const,
       },
+      // Optional: if you have other properties like opacity, rotate, etc., also add "as const"
     },
   },
 };
