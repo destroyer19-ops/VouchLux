@@ -3,15 +3,9 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import CoreValues from '@/components/CoreValues'; // Import CoreValues
 
 // --- Placeholder Components (to be implemented later) ---
-const CoreValues = () => (
-  <div style={{ backgroundColor: '#F9F9F9', color: '#1A1A1A' }} className="py-20 text-center">
-    <h2 className="text-3xl font-bold" style={{ color: '#0B1A2D' }}>Our Core Values</h2>
-    <p className="mt-4">Vision, Mission, and C.I.T.E.E.S values will go here.</p>
-  </div>
-);
-
 const LeadershipCard = ({ name, title, quote, imageSrc }: { name: string; title: string; quote: string; imageSrc: string }) => (
   <div style={{ backgroundColor: '#0B1A2D', color: '#F9F9F9' }} className="rounded-lg shadow-lg p-6 text-center">
     <div className="flex justify-center mb-4">
