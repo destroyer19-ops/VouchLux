@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { Variants } from "framer-motion";
 
 const projectUpdates = [
   "Project Ascenda: 75% Complete",
@@ -11,15 +12,16 @@ const projectUpdates = [
 
 const duplicatedUpdates = [...projectUpdates, ...projectUpdates];
 
-const marqueeVariants = {
+
+const marqueeVariants: Variants = {
   animate: {
-    x: [0, -1000], // Adjust this value based on the content width
+    x: [0, -1035],                    // adjust your number as needed
     transition: {
       x: {
         repeat: Infinity,
-        repeatType: "loop",
-        duration: 25, // Adjust duration for speed
-        ease: "linear",
+        repeatType: "loop" as const,   // ← this is the magic line
+        duration: 50,                  // your duration
+        ease: "linear" as const,
       },
     },
   },
