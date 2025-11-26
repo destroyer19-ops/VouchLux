@@ -1,15 +1,27 @@
-'use client';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi'; // Import FiChevronDown
 
+interface NavLinkItem {
+  href: string;
+  label: string;
+  isDropdown?: false; // Explicitly state it's not a dropdown
+}
+
+interface NavDropdownItem {
+  label: string;
+  isDropdown: true;
+  submenu: NavLinkItem[];
+}
+
+type NavItem = NavLinkItem | NavDropdownItem;
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
-  const navLinks = [
+  const navLinks: NavItem[] = [
     { href: "/about", label: "About" },
     { href: "/developments", label: "Developments" },
     {
@@ -132,4 +144,3 @@ export default function Header() {
     </header>
   );
 }
-
