@@ -12,23 +12,23 @@ export default function AboutPage() {
       {/* Hero-like section for About Us */}
       <motion.section
         className="relative h-[50vh] flex items-center justify-center"
-        style={{ backgroundColor: '#0B1A2D', color: '#F9F9F9' }} // Midnight Blue background
+        style={{ backgroundColor: '#22266d', color: '#ffffff' }}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight" style={{ color: '#F9F9F9' }}>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight" style={{ color: '#ffffff' }}>
             Where Quality Meets Promise
           </h1>
-          <p className="text-lg md:text-xl mt-4" style={{ color: '#D4AF37' }}>Learn more about Vouchlux</p>
+          <p className="text-lg md:text-xl mt-4" style={{ color: '#cea24a' }}>Learn more about Vouchlux</p>
         </div>
       </motion.section>
 
       {/* The Vouchlux Story */}
       <motion.section
-        style={{ backgroundColor: '#F9F9F9', color: '#1A1A1A' }} // Ivory background
+        style={{ backgroundColor: '#ffffff', color: '#22266d' }}
         className="py-20 px-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -36,12 +36,13 @@ export default function AboutPage() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#0B1A2D' }}>The Vouchlux Story</h2>
+          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#22266d' }}>The Vouchlux Story</h2>
           <div className="max-w-3xl mx-auto text-lg leading-relaxed text-center">
+            <p className="mb-4">At Vouchlux, we believe in **"Luxury. Digitized."** We are on a mission to be the most trusted platform for managing and validating luxury assets through the power of blockchain and AI. We tackle the lack of transparency, provenance, authenticity, and liquidity in the global luxury market head-on, fostering a secure and liquid ecosystem for high-value assets.</p>
             <p className="mb-4">Founded with a bold vision to create a brand every real estate investor can trust, Vouchlux was born from years of expertise in real estate development and investment.</p>
             <p className="mb-4">We stepped in to deliver solutions where quality meets luxury and where promises meet performance.</p>
             <p className="mb-4">At Vouchlux, we believe a home is more than walls and roofs — it is a reflection of identity, security, and legacy. Our promise is to create luxury spaces that are timeless, functional, and intelligent, crafted with precision and an unwavering commitment to trust.</p>
-            <p className="font-bold" style={{ color: '#D4AF37' }}>
+            <p className="font-bold" style={{ color: '#cea24a' }}>
                 2019: The idea → 2020: Registration → 2024: Award → 2025: Expansion
             </p>
             {/* Placeholder for blueprint paper animation */}
@@ -54,7 +55,7 @@ export default function AboutPage() {
 
       {/* Leadership */}
       <motion.section
-        style={{ backgroundColor: '#1A1A1A', color: '#F9F9F9' }} // Charcoal background
+        style={{ backgroundColor: '#22266d', color: '#ffffff' }}
         className="py-20 px-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +63,7 @@ export default function AboutPage() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
       >
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#D4AF37' }}>Our Leadership</h2>
+          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#cea24a' }}>Our Leadership</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <LeadershipCard
               name="David Osekhuemen"
@@ -89,7 +90,7 @@ export default function AboutPage() {
 
       {/* Regulatory & CSR */}
       <motion.section
-        style={{ backgroundColor: '#F9F9F9', color: '#1A1A1A' }} // Ivory background
+        style={{ backgroundColor: '#ffffff', color: '#22266d' }}
         className="py-20 px-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -97,7 +98,7 @@ export default function AboutPage() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
       >
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12" style={{ color: '#0B1A2D' }}>Regulatory & Social Commitment</h2>
+          <h2 className="text-3xl font-bold mb-12" style={{ color: '#22266d' }}>Regulatory & Social Commitment</h2>
           <p className="text-lg leading-relaxed max-w-3xl mx-auto mb-8">
             At Vouchlux, we place a premium on compliance with all regulatory and statutory measures governing property ownership and development in Nigeria.
             We are fully regulated and in compliance with Real estate developers association of Nigeria (REDAN), Lagos state Real estate regulations authority(LASERA), SCUML, etc.
@@ -107,7 +108,7 @@ export default function AboutPage() {
           </p>
           {/* Placeholders for Logo carousel and CSR Gallery */}
         </div>
-      </motion.section>
+    </motion.section>
     </main>
   );
 }

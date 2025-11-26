@@ -32,7 +32,7 @@ const marqueeVariants: Variants = {
 
 export default function InvestmentStrip() {
   return (
-    <section className="bg-midnight-blue text-ivory py-4 overflow-hidden">
+    <section style={{ backgroundColor: '#ffffff', color: '#22266d' }} className="py-4 overflow-hidden">
       <div className="w-full flex">
         <motion.div
           className="flex"
@@ -41,7 +41,7 @@ export default function InvestmentStrip() {
         >
           {duplicatedHighlights.map((text, index) => (
             <div key={index} className="flex-shrink-0 flex items-center whitespace-nowrap">
-              <span className="text-gold mx-4">◆</span>
+              <span style={{ color: '#cea24a' }} className="mx-4">◆</span>
               <span className="font-bold text-lg tracking-wider">{text}</span>
             </div>
           ))}

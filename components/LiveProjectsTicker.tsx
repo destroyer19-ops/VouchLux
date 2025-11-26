@@ -29,7 +29,7 @@ const marqueeVariants: Variants = {
 
 export default function LiveProjectsTicker() {
   return (
-    <section style={{ backgroundColor: '#D4AF37', color: '#0B1A2D' }} className="py-2 overflow-hidden">
+    <section style={{ backgroundColor: '#ffffff', color: '#22266d' }} className="py-2 overflow-hidden">
       <div className="w-full flex">
         <motion.div
           className="flex"
@@ -38,7 +38,7 @@ export default function LiveProjectsTicker() {
         >
           {duplicatedUpdates.map((text, index) => (
             <div key={index} className="flex-shrink-0 flex items-center whitespace-nowrap">
-              <span style={{ color: '#F9F9F9' }} className="mx-4">●</span>
+              <span style={{ color: '#cea24a' }} className="mx-4">●</span>
               <span className="font-semibold text-base tracking-wide">{text}</span>
             </div>
           ))}

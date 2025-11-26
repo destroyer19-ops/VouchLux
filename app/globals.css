@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #22266d;
+
+  --vouch-dark-blue: 34 38 109;
+  --vouch-bright-blue: 55 70 211;
+  --vouch-gold: 206 162 74;
+  --vouch-light-gold: 233 196 116;
 }
 
 @theme inline {
@@ -14,10 +20,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #22266d;
+    --foreground: #ffffff;
   }
 }
 
 body {
+  @apply font-sans;
+  line-height: 1.6; /* Increased line-height for better readability */
+  letter-spacing: 0.02em; /* Subtle letter-spacing for a refined look */
 }

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       {/* --- Hero Section --- */}
-      <section className="relative h-screen flex items-center justify-center text-ivory">
+      <section className="relative h-screen flex items-center justify-center text-white">
         {/* Background Video */}
         <video
           autoPlay
@@ -27,18 +27,18 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
         
         <div className="relative z-20 text-center px-6">
-          <h1 style={{ color: '#fff'}}  className="text-4xl md:text-6xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
             We don't just build homes — we vouch for them.
           </h1>
-          <p style={{ color: '#fff'}} className="text-lg md:text-xl mb-8">
+          <p className="text-lg md:text-xl mb-8">
             Functional. Durable. Luxurious. Smart.
           </p>
           <div className="flex justify-center gap-4">
-            <Link href="/developments" style={{ backgroundColor: '#D4AF37', color: '#0B1A2D' }} className="font-bold px-8 py-3 rounded-md hover:bg-opacity-80 transition-colors duration-300">
+            <Link href="/developments" style={{ backgroundColor: '#3746d3', color: '#ffffff' }} className="font-bold px-8 py-3 rounded-md hover:bg-opacity-80 transition-colors duration-300">
               Explore Projects
             </Link>
-            <Link href="/contact" style={{ borderColor: '#F9F9F9', color: '#F9F9F9' }} className="border-2 font-bold px-8 py-3 rounded-md hover:bg-ivory hover:text-midnight-blue transition-colors duration-300">
-              Invest With Us
+            <Link href="/investment-portal" style={{ borderColor: '#cea24a', color: '#cea24a', borderWidth: '2px' }} className="font-bold px-8 py-3 rounded-md transition-colors duration-300">
+              Explore Investment
             </Link>
           </div>
         </div>
